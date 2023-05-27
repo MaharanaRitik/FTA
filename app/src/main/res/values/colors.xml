@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="welcomeText">#570000</color>
+    <color name="welcomeBg">#BAA26FB5</color>
+    <color name="meditationText">#0A0A0A</color>
+    <color name="meditationBtn">#1B305E</color>
+    <color name="mediBtnTxt">#ABD0F5</color>
+</resources>

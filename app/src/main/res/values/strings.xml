@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">fta</string>
+    <string name="loginUsername">Username</string>
+    <string name="loginPass">Enter Password</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnSignup">SIGN UP</string>
+    <string name="crtName">ENTER YOUR NAME </string>
+    <string name="crtEmail">ENTER YOUR E-mail </string>
+    <string name="crtSex">GENDER </string>
+    <string name="crtAge">AGE </string>
+    <string name="crtHeight">HEIGHT(cm) </string>
+    <string name="crtWeight">WEIGHT(kg) </string>
+    <string name="crtPass">CREATE NEW PASSWORD </string>
+    <string name="cnfPass">CONFIRM YOUR PASSWORD </string>
+
+
+</resources>
