@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548416933438",
+    "project_id": "fta-users",
+    "storage_bucket": "fta-users.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548416933438:android:350eef059e246322440b6f",
+        "android_client_info": {
+          "package_name": "com.example.fta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-l-QoOa96iuJ2ILkALynBveObo_1Vtwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
