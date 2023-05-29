@@ -7,4 +7,6 @@
     <color name="meditationText">#0A0A0A</color>
     <color name="meditationBtn">#1B305E</color>
     <color name="mediBtnTxt">#ABD0F5</color>
+    <color name="medibg">#163450</color>
+
 </resources>

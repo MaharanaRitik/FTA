@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Fta"
         tools:targetApi="31">
         <activity
-            android:name=".data.quickHeal"
+            android:name=".quickHeal"
             android:exported="false" />
         <activity
-            android:name=".data.deepSleep"
+            android:name=".deepSleep"
             android:exported="false" />
         <activity
-            android:name=".data.chakra"
+            android:name=".chakra"
             android:exported="false" />
         <activity
             android:name=".Workout"
