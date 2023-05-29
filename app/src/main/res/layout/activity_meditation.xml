@@ -18,11 +18,11 @@
         tools:layout_editor_absoluteY="235dp" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDeepSleep"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/meditationBtn"
-        android:text="60 Minutes"
+        android:text="Deep Sleep"
         android:textColor="@color/mediBtnTxt"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -30,16 +30,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.837"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnChakra"
         app:layout_constraintVertical_bias="0.025" />
 
     
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnChakra"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/meditationBtn"
-        android:text="45 Minutes"
+        android:text="Chakra Allign"
         android:textColor="@color/mediBtnTxt"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -47,15 +47,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.837"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuick"
         app:layout_constraintVertical_bias="0.025" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnQuick"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/meditationBtn"
-        android:text="15 Minutes"
+        android:text="Quick Healing"
         android:textColor="@color/mediBtnTxt"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -70,7 +70,7 @@
         android:id="@+id/textView"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
-        android:text="How long do you plan on to dive into peace?"
+        android:text="What are your current peace plans?"
         android:textColor="@color/meditationText"
         android:textSize="25sp"
         android:textStyle="bold"
