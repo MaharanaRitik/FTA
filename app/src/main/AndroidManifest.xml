@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Fta"
         tools:targetApi="31">
         <activity
+            android:name=".squatkicks"
+            android:exported="false" />
+        <activity
+            android:name=".sideplank"
+            android:exported="false" />
+        <activity
+            android:name=".pushup1"
+            android:exported="false" />
+        <activity
+            android:name=".plank2"
+            android:exported="false" />
+        <activity
+            android:name=".lunge1"
+            android:exported="false" />
+        <activity
+            android:name=".jumpingsquat"
+            android:exported="false" />
+        <activity
+            android:name=".jumpingjack"
+            android:exported="false" />
+        <activity
             android:name=".quickHeal"
             android:exported="false" />
         <activity

@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,6 +33,18 @@ public class Workout extends AppCompatActivity {
 
         recyclerWorkoutAdapter adapter = new recyclerWorkoutAdapter(this, arrExercise);
         exRecyclerViewList.setAdapter(adapter);
+
+        Button startexr;
+        startexr = findViewById(R.id.startexr);
+
+        startexr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startexercise;
+                startexercise=new Intent(Workout.this, jumpingjack.class);
+                startActivity(startexercise);
+            }
+        });
 
     }
 }
