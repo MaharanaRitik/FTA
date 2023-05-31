@@ -29,9 +29,10 @@ public class pushup1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent lngoo;
-                lngoo = new Intent(pushup1.this, homeScreenF.class);
+                lngoo = new Intent(pushup1.this, homeScreen.class);
                 startActivity(lngoo);
                 Toast.makeText(pushup1.this, "Great job, you're done for the day!", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 

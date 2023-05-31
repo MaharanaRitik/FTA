@@ -12,18 +12,22 @@
         android:id="@+id/yogabg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="fitXY"
         android:src="@drawable/yogabg"
-        android:scaleType="fitXY"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-48dp" />
 
-    <TextView
+    <Button
+        android:id="@+id/btnSurya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ERROR 404!"
-        android:textSize="70dp"
+        android:text="Suryanamaskar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/yogabg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/yogabg" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

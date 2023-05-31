@@ -30,6 +30,7 @@ public class plank2 extends AppCompatActivity {
                 Intent lnger;
                 lnger = new Intent(plank2.this, pushup1.class);
                 startActivity(lnger);
+                finish();
             }
         });
 

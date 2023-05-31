@@ -11,6 +11,8 @@ import com.example.fta.R;
 
 public class chakra extends AppCompatActivity {
 
+    MediaPlayer chakraMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -18,7 +20,6 @@ public class chakra extends AppCompatActivity {
         setContentView(R.layout.activity_chakra);
 
 
-        MediaPlayer chakraMusic;
         chakraMusic = MediaPlayer.create(this, R.raw.chakra);
 
 
@@ -53,6 +54,15 @@ public class chakra extends AppCompatActivity {
                 }
             });
         }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (chakraMusic != null) {
+            chakraMusic.release();
+            chakraMusic = null;
+        }
+    }
 
 
     }

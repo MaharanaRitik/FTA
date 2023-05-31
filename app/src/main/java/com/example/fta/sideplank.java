@@ -30,6 +30,7 @@ public class sideplank extends AppCompatActivity {
                 Intent lnga;
                 lnga = new Intent(sideplank.this, plank2.class);
                 startActivity(lnga);
+                finish();
             }
         });
 

@@ -30,6 +30,7 @@ public class lunge1 extends AppCompatActivity {
                 Intent lngu;
                 lngu = new Intent(lunge1.this, squatkicks.class);
                 startActivity(lngu);
+                finish();
             }
         });
     }

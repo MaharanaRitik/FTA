@@ -30,6 +30,7 @@ public class squatkicks extends AppCompatActivity {
                 Intent langur;
                 langur = new Intent(squatkicks.this, sideplank.class);
                 startActivity(langur);
+                finish();
             }
         });
 

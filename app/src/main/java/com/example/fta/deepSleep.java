@@ -10,13 +10,13 @@ import android.widget.Button;
 import com.example.fta.R;
 
 public class deepSleep extends AppCompatActivity {
+    MediaPlayer deepMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deep_sleep);
 
-        MediaPlayer deepMusic;
         deepMusic = MediaPlayer.create(this, R.raw.sleep);
 
 
@@ -47,5 +47,15 @@ public class deepSleep extends AppCompatActivity {
                 deepMusic.seekTo(0); // Start playing the music from the beginning
             }
         });
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (deepMusic != null) {
+            deepMusic.release();
+            deepMusic = null;
+        }
     }
 }

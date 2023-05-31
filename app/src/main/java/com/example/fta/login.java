@@ -64,8 +64,9 @@ public class login extends AppCompatActivity {
             @Override
             public void onSuccess(AuthResult authResult) {
                 Intent First;
-                First = new Intent(login.this, homeScreenF.class);
+                First = new Intent(login.this, homeScreen.class);
                 startActivity(First);
+                finish();
             }
 
         }).addOnFailureListener(new OnFailureListener() {
@@ -74,4 +75,5 @@ public class login extends AppCompatActivity {
                 Toast.makeText(login.this, "Enter valid credentials! ", Toast.LENGTH_SHORT).show();
             }
         });
+
     }}

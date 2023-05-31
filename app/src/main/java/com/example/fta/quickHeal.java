@@ -11,13 +11,15 @@ import com.example.fta.R;
 
 public class quickHeal extends AppCompatActivity {
 
+    MediaPlayer quickMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quick_heal);
 
 
-        MediaPlayer quickMusic;
+
         quickMusic = MediaPlayer.create(this, R.raw.minute20);
 
 
@@ -50,4 +52,14 @@ public class quickHeal extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (quickMusic != null) {
+            quickMusic.release();
+            quickMusic = null;
+        }
+    }
+
 }

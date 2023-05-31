@@ -7,23 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Yoga extends AppCompatActivity {
+public class yoga1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yoga);
-        Button btnSurya;
-        btnSurya=findViewById(R.id.btnSurya);
+        setContentView(R.layout.activity_yoga1);
 
-        btnSurya.setOnClickListener(new View.OnClickListener() {
+        Button btnnxtY1;
+        btnnxtY1=findViewById(R.id.btnNxtY1);
+        btnnxtY1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent surya;
-                surya = new Intent(Yoga.this, yoga1.class);
-                startActivity(surya);
+                Intent yoa;
+                yoa=new Intent(yoga1.this, yoga2.class);
+                startActivity(yoa);
             }
         });
-
     }
 }

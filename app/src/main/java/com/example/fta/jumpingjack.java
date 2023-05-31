@@ -30,6 +30,7 @@ public class jumpingjack extends AppCompatActivity {
                 Intent jmp;
                 jmp = new Intent(jumpingjack.this, jumpingsquat.class);
                 startActivity(jmp);
+                finish();
             }
         });
 

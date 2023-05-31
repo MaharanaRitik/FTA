@@ -16,13 +16,55 @@
         android:src="@drawable/dietbg" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ERROR 404!"
-        android:textSize="70dp"
+        android:text="What are your dieting plans?"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/dietbg"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dietbg" />
+        app:layout_constraintTop_toTopOf="@+id/dietbg"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <Button
+        android:id="@+id/btnGain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaintain"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <Button
+
+        android:id="@+id/btnLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lose"
+        app:layout_constraintBottom_toBottomOf="@+id/dietbg"
+        app:layout_constraintEnd_toEndOf="@+id/dietbg"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Button
+        android:id="@+id/btnMaintain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maintain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoss"
+        app:layout_constraintVertical_bias="0.105" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

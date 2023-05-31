@@ -5,16 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homeScreenF">
+    tools:context=".homeScreen">
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/gymBg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/homescreenbg"
+        app:lottie_rawRes="@raw/homescreentrainbg"
         tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="57dp" />
+        tools:layout_editor_absoluteY="57dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,24 +27,12 @@
         android:textColor="@color/welcomeText"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/gymTrainer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
-
-    <ImageView
-        android:id="@+id/gymTrainer"
-        android:layout_width="256dp"
-        android:layout_height="340dp"
-        android:src="@drawable/coach_f"
-        app:layout_constraintBottom_toTopOf="@+id/btnFullWorkoutF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <Button
         android:id="@+id/btnFullWorkoutF"
