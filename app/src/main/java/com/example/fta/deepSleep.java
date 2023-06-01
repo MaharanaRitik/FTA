@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.example.fta.R;
 
 public class deepSleep extends AppCompatActivity {
     MediaPlayer deepMusic;
+    LottieAnimationView lottieSoundWaveSleep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,7 @@ public class deepSleep extends AppCompatActivity {
         setContentView(R.layout.activity_deep_sleep);
 
         deepMusic = MediaPlayer.create(this, R.raw.sleep);
+        lottieSoundWaveSleep=findViewById(R.id.lottieSoundWaveSleep);
 
 
         // Find the buttons by their IDs
@@ -30,6 +34,8 @@ public class deepSleep extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deepMusic.start();
+                lottieSoundWaveSleep.playAnimation();
+                lottieSoundWaveSleep.setRepeatCount(LottieDrawable.INFINITE);
             }
         });
 
@@ -38,6 +44,7 @@ public class deepSleep extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deepMusic.pause(); // Pause the music
+                lottieSoundWaveSleep.pauseAnimation();
             }
         });
 
@@ -45,6 +52,8 @@ public class deepSleep extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deepMusic.seekTo(0); // Start playing the music from the beginning
+                lottieSoundWaveSleep.resumeAnimation();
+                lottieSoundWaveSleep.setRepeatCount(LottieDrawable.INFINITE);
             }
         });
     }
@@ -56,6 +65,7 @@ public class deepSleep extends AppCompatActivity {
         if (deepMusic != null) {
             deepMusic.release();
             deepMusic = null;
+            lottieSoundWaveSleep.cancelAnimation();
         }
     }
 }

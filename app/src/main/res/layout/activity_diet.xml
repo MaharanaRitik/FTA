@@ -8,12 +8,14 @@
     tools:context=".Diet"
     >
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/dietbg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/dietbg" />
+        app:lottie_rawRes="@raw/sunrisedietbg"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
 
     <TextView
         android:id="@+id/textView2"

@@ -26,6 +26,7 @@ public class yoga12 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent yom;
                 yom=new Intent(yoga12.this, homeScreen.class);
+                Toast.makeText(yoga12.this, "Great job, you're done for the day!", Toast.LENGTH_SHORT).show();
                 startActivity(yom);
             }
         });
@@ -36,8 +37,8 @@ public class yoga12 extends AppCompatActivity {
                 Intent yomm;
                 yomm=new Intent(yoga12.this, yoga11.class);
                 startActivity(yomm);
-                Toast.makeText(yoga12.this, "Great job, you're done for the day!", Toast.LENGTH_SHORT).show();
                 finish();
+
             }
         });
 

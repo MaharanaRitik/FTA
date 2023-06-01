@@ -7,15 +7,29 @@
     tools:context=".quickHeal"
     android:background="@color/medibg">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/med"
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_rawRes="@raw/mediquickheal"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.150"
+        android:id="@+id/lottieQuickHeal"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieSoundWaveQuick"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
+        app:layout_constraintVertical_bias="0.066"
+        app:lottie_rawRes="@raw/meditationsoundwave" />
 
     <Button
         android:id="@+id/musicPlay1"
@@ -26,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
@@ -38,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
@@ -50,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
         app:layout_constraintVertical_bias="0.455" />
 
 

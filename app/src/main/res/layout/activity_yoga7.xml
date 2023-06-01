@@ -7,6 +7,16 @@
     tools:context=".yoga1">
 
     <ImageView
+        android:id="@+id/yogabg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/yogabg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-48dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/seven"
@@ -15,36 +25,42 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <TextView
         android:id="@+id/yogatxtname7"
-        android:layout_width="59dp"
-        android:layout_height="22dp"
-        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Bhujangasana"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/yogades7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:padding="20sp"
+        android:text="To achieve this posture, begin by reclining your legs and abdomen onto the ground. Next, place your palms close to your chest, and as you inhale, use the pressure from your hands to raise your upper body off the ground while keeping your pelvis in contact with the floor. Hold this position by keeping your shoulders down and away from your ears, with your feet tucked in and your head and torso held in a raised cobra position."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintTop_toBottomOf="@+id/yogatxtname7"
+        app:layout_constraintVertical_bias="0.084" />
 
     <Button
         android:id="@+id/btnnxtY7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Next"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.918"
@@ -56,7 +72,9 @@
         android:id="@+id/btnprevY7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Back"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"

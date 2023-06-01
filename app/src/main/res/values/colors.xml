@@ -8,5 +8,9 @@
     <color name="meditationBtn">#1B305E</color>
     <color name="mediBtnTxt">#ABD0F5</color>
     <color name="medibg">#163450</color>
+    <color name="brown">#854D12</color>
+    <color name="homeBtnClr3">#4578B2</color>
+    <color name="lightGray">#CCCCCC</color>
+    <color name="purple">#694285</color>
 
 </resources>

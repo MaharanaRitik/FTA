@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieComposition;
+import com.airbnb.lottie.LottieDrawable;
 import com.example.fta.R;
 
 public class chakra extends AppCompatActivity {
 
     MediaPlayer chakraMusic;
+    LottieAnimationView lottieChakra, lottieSoundWaveChakra;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -21,7 +26,8 @@ public class chakra extends AppCompatActivity {
 
 
         chakraMusic = MediaPlayer.create(this, R.raw.chakra);
-
+        lottieChakra= findViewById(R.id.lottieChakra);
+        lottieSoundWaveChakra=findViewById(R.id.lottieSoundWaveChakra);
 
 
 
@@ -36,7 +42,12 @@ public class chakra extends AppCompatActivity {
                @Override
                public void onClick(View v) {
                    chakraMusic.start();
+                   lottieChakra.playAnimation();
+                   lottieChakra.setRepeatCount(LottieDrawable.INFINITE);
+                   lottieSoundWaveChakra.playAnimation();
+                   lottieSoundWaveChakra.setRepeatCount(LottieDrawable.INFINITE);
                }
+
            });
 
 
@@ -44,25 +55,37 @@ public class chakra extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     chakraMusic.pause(); // Pause the music
+                    lottieChakra.pauseAnimation();
+                    lottieSoundWaveChakra.pauseAnimation();
                 }
+
             });
 
             btnStartOver.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     chakraMusic.seekTo(0); // Start playing the music from the beginning
+                    lottieChakra.resumeAnimation();
+                    lottieChakra.setRepeatCount(LottieDrawable.INFINITE);
+                    lottieSoundWaveChakra.resumeAnimation();
+                    lottieSoundWaveChakra.setRepeatCount(LottieDrawable.INFINITE);
                 }
             });
         }
 
     @Override
-    protected void onDestroy() {
+    protected void onDestroy()
+        {
         super.onDestroy();
         if (chakraMusic != null) {
             chakraMusic.release();
             chakraMusic = null;
+            lottieChakra.cancelAnimation();
+            lottieSoundWaveChakra.cancelAnimation();
+         }
         }
-    }
+
+
 
 
     }
