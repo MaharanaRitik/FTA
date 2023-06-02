@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieDrawable;
@@ -29,9 +30,9 @@ public class quickHeal extends AppCompatActivity {
 
 
         // Find the buttons by their IDs
-        Button btnPlay = findViewById(R.id.musicPlay1);
-        Button btnPause = findViewById(R.id.musicPause1);
-        Button btnStartOver = findViewById(R.id.musicRestart1);
+        ImageButton btnPlay = findViewById(R.id.musicPlay1);
+        ImageButton btnPause = findViewById(R.id.musicPause1);
+        ImageButton btnStartOver = findViewById(R.id.musicRestart1);
 
 
         btnPlay.setOnClickListener(new View.OnClickListener() {

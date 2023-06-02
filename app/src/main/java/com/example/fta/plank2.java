@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class plank2 extends AppCompatActivity {
 
     private TextView Plank2;
-    private EditText rep5;
     private Button NextExe;
 
     @Override
@@ -21,7 +20,6 @@ public class plank2 extends AppCompatActivity {
         setContentView(R.layout.activity_plank2);
 
         Plank2 = findViewById(R.id.pose5);
-        rep5 = findViewById(R.id.rep5);
         NextExe = findViewById(R.id.nxtexe5);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

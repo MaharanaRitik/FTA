@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,11 +32,12 @@
         app:layout_constraintVertical_bias="0.066"
         app:lottie_rawRes="@raw/meditationsoundwave" />
 
-    <Button
+    <ImageButton
         android:id="@+id/musicPlay1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:backgroundTint="@color/medibg"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -43,11 +45,12 @@
         app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
         app:layout_constraintVertical_bias="0.455" />
 
-    <Button
+    <ImageButton
         android:id="@+id/musicPause1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:backgroundTint="@color/medibg"
+        app:srcCompat="@drawable/baseline_pause_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.188"
@@ -55,11 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/lottieQuickHeal"
         app:layout_constraintVertical_bias="0.455" />
 
-    <Button
+    <ImageButton
         android:id="@+id/musicRestart1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restart"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:backgroundTint="@color/medibg"
+        app:srcCompat="@drawable/baseline_restart_alt_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.829"

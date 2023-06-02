@@ -11,9 +11,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
 public class Workout extends AppCompatActivity {
-
     ArrayList<exerciseModel> arrExercise = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +20,6 @@ public class Workout extends AppCompatActivity {
 
         RecyclerView exRecyclerViewList = findViewById(R.id.exList);
         exRecyclerViewList.setLayoutManager(new LinearLayoutManager(this));
-
         arrExercise.add(new exerciseModel(R.raw.jumping_jacks, "Jumping_Jacks", "1 min", "hehe"));
         arrExercise.add(new exerciseModel(R.raw.jumping_squats, "Jumping_squats", "1 min", "hehe"));
         arrExercise.add(new exerciseModel(R.raw.lunge, "lunge 1", "3 min", "hehe"));
@@ -30,13 +27,10 @@ public class Workout extends AppCompatActivity {
         arrExercise.add(new exerciseModel(R.raw.side_plank, "side plank", "1.5 min", "hehe"));
         arrExercise.add(new exerciseModel(R.raw.t_plank_exercise, "plank 2", "?", "hehe"));
         arrExercise.add(new exerciseModel(R.raw.push_ups, "push up 1", "1.5 min", "hehe"));
-
         recyclerWorkoutAdapter adapter = new recyclerWorkoutAdapter(this, arrExercise);
         exRecyclerViewList.setAdapter(adapter);
-
         Button startexr;
         startexr = findViewById(R.id.startexr);
-
         startexr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +39,5 @@ public class Workout extends AppCompatActivity {
                 startActivity(startexercise);
             }
         });
-
     }
 }

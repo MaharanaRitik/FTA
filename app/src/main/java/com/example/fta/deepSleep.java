@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieDrawable;
@@ -25,9 +26,9 @@ public class deepSleep extends AppCompatActivity {
 
 
         // Find the buttons by their IDs
-        Button btnPlay = findViewById(R.id.musicPlay3);
-        Button btnPause = findViewById(R.id.musicPause3);
-        Button btnStartOver = findViewById(R.id.musicRestart3);
+        ImageButton btnPlay = findViewById(R.id.musicPlay3);
+        ImageButton btnPause = findViewById(R.id.musicPause3);
+        ImageButton btnStartOver = findViewById(R.id.musicRestart3);
 
 
         btnPlay.setOnClickListener(new View.OnClickListener() {

@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class jumpingjack extends AppCompatActivity {
 
     private TextView JumpingJack;
-    private EditText rep1;
     private Button nxtexe1;
 
     @Override
@@ -21,7 +20,6 @@ public class jumpingjack extends AppCompatActivity {
         setContentView(R.layout.activity_jumpingjack);
 
         JumpingJack = findViewById(R.id.pose1);
-        rep1 = findViewById(R.id.rep1);
         nxtexe1 = findViewById(R.id.nxtexe1);
 
         nxtexe1.setOnClickListener(new View.OnClickListener() {

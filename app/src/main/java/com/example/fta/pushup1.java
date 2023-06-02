@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class pushup1 extends AppCompatActivity {
 
     private TextView PushUp1;
-    private EditText rep6;
     private Button NextExe;
 
     @Override
@@ -22,7 +21,6 @@ public class pushup1 extends AppCompatActivity {
         setContentView(R.layout.activity_pushup1);
 
         PushUp1 = findViewById(R.id.pose6);
-        rep6 = findViewById(R.id.rep6);
         NextExe = findViewById(R.id.nxtexe6);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

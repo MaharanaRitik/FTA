@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class jumpingsquat extends AppCompatActivity {
 
     private TextView JumpingSquats;
-    private EditText rep2;
     private Button NextExe;
 
     @Override
@@ -21,7 +20,6 @@ public class jumpingsquat extends AppCompatActivity {
         setContentView(R.layout.activity_jumpingsquat);
 
         JumpingSquats = findViewById(R.id.pose2);
-        rep2 = findViewById(R.id.rep2);
         NextExe = findViewById(R.id.nxtexe2);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

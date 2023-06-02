@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieComposition;
@@ -32,9 +33,9 @@ public class chakra extends AppCompatActivity {
 
 
             // Find the buttons by their IDs
-            Button btnPlay = findViewById(R.id.musicPlay2);
-            Button btnPause = findViewById(R.id.musicPause2);
-            Button btnStartOver = findViewById(R.id.musicRestart2);
+            ImageButton btnPlay = findViewById(R.id.musicPlay2);
+            ImageButton btnPause = findViewById(R.id.musicPause2);
+            ImageButton btnStartOver = findViewById(R.id.musicRestart2);
 
 
 

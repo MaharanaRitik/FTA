@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class sideplank extends AppCompatActivity {
 
     private TextView SidePlank;
-    private EditText rep8;
     private Button NextExe;
 
     @Override
@@ -21,7 +20,6 @@ public class sideplank extends AppCompatActivity {
         setContentView(R.layout.activity_sideplank);
 
         SidePlank = findViewById(R.id.pose8);
-        rep8 = findViewById(R.id.rep8);
         NextExe = findViewById(R.id.nxtexe8);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

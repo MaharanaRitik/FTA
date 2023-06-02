@@ -1,5 +1,4 @@
 package com.example.fta;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.dynamicanimation.animation.SpringAnimation;
@@ -18,7 +17,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class signup extends AppCompatActivity {
-
     private EditText crtWeight, crtAge, crtHeight, crtEmail, crtName, crtSex, txtpassword;
     private Button btnSignUp;
     private FirebaseAuth auth;

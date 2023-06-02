@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class lunge1 extends AppCompatActivity {
 
     private TextView Lunge1;
-    private EditText rep3;
     private Button NextExe;
 
     @Override
@@ -21,7 +20,6 @@ public class lunge1 extends AppCompatActivity {
         setContentView(R.layout.activity_lunge1);
 
         Lunge1 = findViewById(R.id.pose3);
-        rep3 = findViewById(R.id.rep3);
         NextExe = findViewById(R.id.nxtexe3);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

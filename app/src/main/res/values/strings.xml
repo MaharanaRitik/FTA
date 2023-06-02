@@ -8,8 +8,8 @@
     <string name="crtEmail">ENTER YOUR E-mail </string>
     <string name="crtSex">GENDER </string>
     <string name="crtAge">AGE </string>
-    <string name="crtHeight">HEIGHT(cm) </string>
-    <string name="crtWeight">WEIGHT(kg) </string>
+    <string name="crtHeight">HEIGHT(cm)</string>
+    <string name="crtWeight">WEIGHT(kg)</string>
     <string name="crtPass">CREATE NEW PASSWORD </string>
     <string name="cnfPass">CONFIRM YOUR PASSWORD </string>
     <string name="yoga_welcome_text"><b>Welcome to the practice of Surya Namaskar</b>!\n<b>Surya Namaskar or Sun Salutation is a sequence of 12 powerful yoga poses.</b>\nBesides being a great cardiovascular workout, Surya Namaskar is also known to have an immensely positive impact on the body and mind.\nThe Surya Namaskar tones the entire body, helps with weight loss, and strengthens muscles and joints.\n<b>So, are you ready to begin?</b></string>

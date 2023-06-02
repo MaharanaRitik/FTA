@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class squatkicks extends AppCompatActivity {
 
     private TextView SquatKicks;
-    private EditText rep9;
     private Button NextExe;
 
     @Override
@@ -21,7 +20,6 @@ public class squatkicks extends AppCompatActivity {
         setContentView(R.layout.activity_squatkicks);
 
         SquatKicks = findViewById(R.id.pose9);
-        rep9 = findViewById(R.id.rep9);
         NextExe = findViewById(R.id.nxtexe9);
 
         NextExe.setOnClickListener(new View.OnClickListener() {

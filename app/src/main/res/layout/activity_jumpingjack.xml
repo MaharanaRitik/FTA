@@ -5,10 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".jumpingjack"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/medibg">
+
+
 
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView3"
         android:layout_width="258dp"
         android:layout_height="328dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,34 +21,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:lottie_rawRes="@raw/jumping_jacks"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/jumping_jacks" />
 
     <TextView
         android:id="@+id/pose1"
         android:layout_width="146dp"
         android:layout_height="27dp"
-        android:background="#FF1100"
-        android:text="Jumping Jacks"
+        android:background="@color/mediBtnTxt"
         android:textColor="@color/black"
+        android:text="Jumping Jacks"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView3"
+        app:layout_constraintVertical_bias="0.046" />
 
-    <EditText
+    <TextView
         android:id="@+id/rep1"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:background="#FF1100"
-        android:ems="5"
-        android:inputType="number"
-        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mediBtnTxt"
+        android:text="Repetitions : 20"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -60,10 +63,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:backgroundTint="@color/homeBtnClr3"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="325dp"
+        android:layout_height="43dp"
+        android:text="2. Maintain proper form, including landing softly with a slight knee bend to minimize joint stress."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:text="1. Start with a warm-up and gradually increase intensity, listening to your body and modifying as needed."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rep1"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:text="3. Breathe properly, focus on a controlled rhythm, and consider using a cushioned surface or mat to reduce impact on joints."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.057" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

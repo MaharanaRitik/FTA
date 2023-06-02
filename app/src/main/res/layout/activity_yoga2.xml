@@ -34,6 +34,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:text="Hasta Uttanasana "
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +48,7 @@
         android:padding="20sp"
         android:text="This is the second pose of Surya Namskar. \nTo start, join your palms together and take a deep breath. Then, lift your arms up while slightly bending backward.
 Keep the biceps close to your ears while simultaneously stretching the whole body up from the heels."
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

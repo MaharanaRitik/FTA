@@ -1,7 +1,5 @@
 package com.example.fta;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -23,9 +21,6 @@ public class splashScreen extends AppCompatActivity {
                 startActivity(splash);
                 finish();
             }
-
         }, 4300);
-
-
     }
 }

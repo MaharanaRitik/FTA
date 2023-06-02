@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="What are your dieting plans?"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,38 +31,44 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/dietbg"
-        app:layout_constraintVertical_bias="0.306" />
+        app:layout_constraintVertical_bias="0.377" />
 
     <Button
         android:id="@+id/btnGain"
-        android:layout_width="wrap_content"
+        android:layout_width="110sp"
         android:layout_height="wrap_content"
         android:text="Gain"
+        android:backgroundTint="@color/homeBtnClr3"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMaintain"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.146" />
 
     <Button
 
         android:id="@+id/btnLoss"
-        android:layout_width="wrap_content"
+        android:layout_width="110sp"
         android:layout_height="wrap_content"
         android:text="Lose"
+        android:backgroundTint="@color/homeBtnClr3"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/dietbg"
         app:layout_constraintEnd_toEndOf="@+id/dietbg"
-        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <Button
         android:id="@+id/btnMaintain"
-        android:layout_width="wrap_content"
+        android:layout_width="110sp"
         android:layout_height="wrap_content"
         android:text="Maintain"
+        android:backgroundTint="@color/homeBtnClr3"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.788"

@@ -1,5 +1,4 @@
 package com.example.fta;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

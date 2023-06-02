@@ -1,5 +1,4 @@
 package com.example.fta;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +17,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity {
-
     private Button btnSignupNew, btnLogin;
     private EditText loginUsername, loginPass;
     private TextView newUserTxt;
@@ -75,5 +73,4 @@ public class login extends AppCompatActivity {
                 Toast.makeText(login.this, "Enter valid credentials! ", Toast.LENGTH_SHORT).show();
             }
         });
-
     }}
