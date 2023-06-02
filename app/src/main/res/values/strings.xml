@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fta</string>
+    <string name="app_name">Fit:Beings</string>
     <string name="loginUsername">Username</string>
     <string name="loginPass">Enter Password</string>
     <string name="btnLogin">LOGIN</string>
